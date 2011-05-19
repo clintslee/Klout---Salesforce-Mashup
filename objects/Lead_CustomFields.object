@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Klout_Class_Description__c</fullName>
+        <description>Description of the user&apos;s Klout class.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Description of the user&apos;s Klout class.</inlineHelpText>
+        <label>Klout Class Description</label>
+        <length>1000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Klout_Class__c</fullName>
+        <description>Name of user&apos;s Klout class.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of user&apos;s Klout class.</inlineHelpText>
+        <label>Klout Class</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Klout_Delta_1_Day__c</fullName>
+        <description>One day change in Klout score.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>One day change in Klout score.</inlineHelpText>
+        <label>Delta 1-Day</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Klout_Delta_5_Day__c</fullName>
+        <description>Five day change in klout score.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Five day change in klout score.</inlineHelpText>
+        <label>Delta 5-Day</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Klout_Influenced_By__c</fullName>
+        <description>The Twitter users that this lead is most influenced by, as determined by Klout.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Twitter users that this lead is most influenced by, as determined by Klout.</inlineHelpText>
+        <label>Influenced By</label>
+        <length>160</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Klout_Influencer_Of__c</fullName>
+        <description>The Twitter users that this lead is most influential over, as determined by Klout.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Twitter users that this lead is most influential over, as determined by Klout.</inlineHelpText>
+        <label>Influencer Of</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Klout_Most_Discussed_Topics__c</fullName>
+        <description>Most discussed Twitter topics as determined by Klout.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Most discussed Twitter topics as determined by Klout.</inlineHelpText>
+        <label>Most Discussed Topics</label>
+        <length>160</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Klout_Network_Score__c</fullName>
+        <description>User&apos;s network score as determined by Klout.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>User&apos;s network score as determined by Klout.</inlineHelpText>
+        <label>Network Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Klout_Score_Description__c</fullName>
+        <description>Description of the user&apos;s Klout score.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Description of the user&apos;s Klout score.</inlineHelpText>
+        <label>Klout Score Description</label>
+        <length>1000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Klout_Score__c</fullName>
+        <description>The user&apos;s Klout score.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The user&apos;s Klout score.</inlineHelpText>
+        <label>Klout Score</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Klout_Slope__c</fullName>
+        <externalId>false</externalId>
+        <label>Slope</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Klout_True_Reach__c</fullName>
+        <description>User&apos;s true network reach as determined by Klout.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>User&apos;s true network reach as determined by Klout.</inlineHelpText>
+        <label>True Reach</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Klout_Twitter_Id__c</fullName>
+        <description>User&apos;s twitter id as provided by Klout.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>User&apos;s twitter id as provided by Klout.</inlineHelpText>
+        <label>Twitter Id</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Twitter_Username__c</fullName>
+        <externalId>false</externalId>
+        <label>Twitter Username</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>
