@@ -1,0 +1,40 @@
+<apex:page >
+    <style>
+        body { font-size: 14px; font-family: Lucida Grande, Helvetica Nueue, Arial; }
+        [id*=container] { width:960px; background-color:#FFFFFF; padding:15px;}
+        [id*=innercontainer] { width:900px; margin: 0 auto; background-color:#EFEFEF; padding:15px; border: 1px solid #CCCCCC;}
+        p { margin-bottom:30px; }
+    </style> 
+    
+    <apex:outputPanel layout="block" id="container">
+        <apex:outputPanel layout="block" id="innercontainer">
+            <h1>Step 1 - Get a Klout API Key</h1>
+            <p>Visit <a href="http://developer.klout.com">the Klout developer site</a> to sign up for a free account and obtain an API Key.  This is also where you'll find the Klout API documentation.</p>
+            
+            <h1>Step 2 - Edit the Klout Custom Setting Object in Salesforce</h1>
+            <p>After you've obtained your API Key from Klout, go to Setup --> Develop --> Custom Settings --> Klout Setup --> Manage.<br /><br />
+            Then, click Edit to set the fields to the following values:
+               <ul>
+                  <li><b>API_KEY__c</b>  [ paste in your Klout API Key ]</li>
+                  <li><b>URI__c</b>  [ http://api.klout.com/1/ ]</li>
+                  <li><b>RESPONSE_FORMAT__c</b>  [ xml ]</li>
+               </ul>
+            </p>
+            
+            <h1>Step 3 - Page Layouts</h1>
+            <p>There are two page layouts included in this package.  One for Leads and one for Contacts.  Each page layout includes the custom Klout fields and a custom button used to update the Klout information for that particular Lead/Contact.</p>
+        
+            <h1>Step 4 - Schedule Batch Apex</h1>
+            <p>There are two batch apex scripts that you can enable that will loop through all of your org's Leads and Contacts and update their Klout score.  These can be scheduled with Salesforce's Schedule Apex 
+               functionality.<br /><br />
+               Go to Setup --> Develop --> Apex Classes -- click Schedule Apex.  The classes are named SCHED_UpdateKloutForContacts and SCHED_UpdateKloutForLeads.  Set them to run at your desired time intervals.  The batch apex will only update the Klout Score field as of now.
+            </p>
+            
+            <h1>Step 5 - Enable/Disable Triggers</h1>
+            <p>There are two after insert triggers, one for Leads and one for Contacts, that can be enabled to automatically retrieve Klout info for any new Lead or Contact that's added.  Go to the Klout Setup Custom object as described in Step 2.  There are checkboxes to enable/disable these triggers.</p>
+            
+            <h1>Watch This Video for a Quick Overview</h1>
+            <p><iframe src="http://player.vimeo.com/video/23864093" width="640" height="512" frameborder="0"></iframe></p>
+        </apex:outputPanel>
+    </apex:outputPanel>
+</apex:page>

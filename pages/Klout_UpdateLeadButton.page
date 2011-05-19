@@ -1,0 +1,10 @@
+<apex:page standardController="Lead" extensions="Klout_LeadUpdateControllerExtension">
+    <apex:form >
+        <apex:pageBlock title="Klout Update Summary">
+            <apex:pageMessage severity="INFO" strength="3" summary="Success!  {!lead.name}'s Klout info has been updated." rendered="{!success}" />
+            <apex:pageBlockSection >
+                <apex:outputField value="{!lead.Klout_Score__c}" rendered="{!success}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>        
+    </apex:form>
+</apex:page>
